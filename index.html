@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple service workers</title>
+</head>
+<body>
+
+    <button onclick="subscribe">subscribe</button>
+
+    <script>
+        addEventListener('load', async () => {
+            let sw= await navigator.serviceWorker.register('./sw.js');
+            console.log(sw);
+        })
+
+        async function subscribe() {
+            let sw = await navigator.serviceWorker.ready;
+            let push = await sw.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: 'BB-M9Wz8OOGF_BYDy2Oi26ML6YWpwutw5EG6rcBRuE7O09s2UCyU6Q9SerFT-Rr1m0PRHeNtHdpTOAwnOTUVHU0'
+            });
+            console.log(JSON.stringify(push));
+        }
+        
+    </script>
+    
+</body>
+</html>
