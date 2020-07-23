@@ -16,12 +16,20 @@
 
       async function subscribe() {
         let sw = await navigator.serviceWorker.ready;
-        let push = await sw.pushManager.subscribe({
+        const subLocal = await sw.pushManager.subscribe({
           userVisibleOnly: true,
           applicationServerKey:
-            "BB-M9Wz8OOGF_BYDy2Oi26ML6YWpwutw5EG6rcBRuE7O09s2UCyU6Q9SerFT-Rr1m0PRHeNtHdpTOAwnOTUVHU0",
+            'BB-M9Wz8OOGF_BYDy2Oi26ML6YWpwutw5EG6rcBRuE7O09s2UCyU6Q9SerFT-Rr1m0PRHeNtHdpTOAwnOTUVHU0',
         });
-        console.log(JSON.stringify(push));
+        console.log(JSON.stringify(subLocal));
+      }
+
+      const subExternal = await sw.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey:
+          'BDZHrTd8TWN29vFf77EwLfKIyfQTkh1aUYSFoGZx7KhRJQc96t_dH0QpqY8TfBPMFpGrgI7JHHRMjNf4AqG2Arw',
+        });
+        console.log(JSON.stringify(subExternal));
       }
     </script>
   </body>

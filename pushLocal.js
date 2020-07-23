@@ -27,12 +27,5 @@ let subChrome = {
     }
 };
 
-let subFirefox = {
-    "endpoint": "https://updates.push.services.mozilla.com/wpush/v2/gAAAAABfG…2jFNUVR-JCHoHkDdRuTpepfqEjJIvab-0TwMroQNzRy4sFxlMh2PJ4qfUzYc",
-    "keys": {
-        "auth": "v7ieRCsgQS4yyT5H9bFryQ",
-        "p256dh": "BNgkvvc4QXihBDCiviTGREklDWOxupVhmozZU6qqkRIOVe4YR-2Qv6PuORyDIQfXskUuogABjknBK4XZCul_zQg"
-    }
-};
 
-push.sendNotification(subChrome, 'test message');
+push.sendNotification(subChrome, 'test message: push local');
