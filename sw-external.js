@@ -1,7 +1,7 @@
 self.addEventListener('push', function(e) {
     var options = {
       body: 'This notification was generated from a push - great!',
-      icon: 'images/yaymeme.jpeg',
+      icon: './images/yaymeme.jpeg',
       vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
@@ -15,6 +15,6 @@ self.addEventListener('push', function(e) {
       ]
     };
     e.waitUntil(
-      self.registration.showNotification(`SW local`, options)
+      self.registration.showNotification(`SW external`, options)
     );
   });
