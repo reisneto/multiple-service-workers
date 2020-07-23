@@ -32,14 +32,6 @@
         console.log(JSON.stringify(subLocal));
       }
 
-      async function subscribeExternal(sw) {
-        const subExternal = await sw.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey:
-            "BDZHrTd8TWN29vFf77EwLfKIyfQTkh1aUYSFoGZx7KhRJQc96t_dH0QpqY8TfBPMFpGrgI7JHHRMjNf4AqG2Arw",
-        });
-        console.log(JSON.stringify(subExternal));
-      }
     </script>
   </body>
 </html>

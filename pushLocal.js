@@ -27,5 +27,13 @@ let subChrome = {
     }
 };
 
+const subLocal = {
+    "endpoint": "https://fcm.googleapis.com/fcm/send/e7XSfR6O-w8:APA91bFYOn5HcLoAdWbBe4NsGXA7_FJd2FEPL_NdVOMwVOL383-_OVcsZMAW-eB1WUKHO4y64MvmOg1Hn2yQZ4WufF0y_HyElXxeX7SPxcWzXyK8XYqN1TQHqqADFJ5g_jErb5JhILp8",
+    "expirationTime": null,
+    "keys": {
+        "p256dh": "BJ54_i_kAfWRdAWQNTRuOMXQ1RUJkoPALLVSb91cSsYFYbr-HAwY46i59tJO0x5MJOXuvbe0XL5hb2J4E372dRQ",
+        "auth": "imdBN8oDBmTVyRnx8Grs1g"
+    }
+};
 
-push.sendNotification(subChrome, 'test message: push local');
+push.sendNotification(subLocal, 'local');
