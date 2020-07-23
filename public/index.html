@@ -20,7 +20,6 @@
       async function subscribe() {
         const sw = await navigator.serviceWorker.ready;
         subscribeLocal(sw);
-        subscribeExternal(sw);
       }
 
       async function subscribeLocal(sw) {
@@ -31,7 +30,6 @@
         });
         console.log(JSON.stringify(subLocal));
       }
-
     </script>
   </body>
 </html>
