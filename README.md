@@ -14,5 +14,5 @@ it is needed because service workers run on https or localhost.
 - When a notification appears, hit accept
 - open the chrome tools console and copy the user data
 - paste it at subLocal variable  
-  	[pushLocal.js](https://github.com/reisneto/multiple-service-workers/blob/master/pushLocal.js#L30)  
-  	[pushExternal.js](https://github.com/reisneto/multiple-service-workers/blob/master/pushExternal.js#L19)
+  	[pushLocal.js](https://github.com/reisneto/multiple-service-workers/blob/master/server/pushLocal.js#L30)  
+  	[pushExternal.js](https://github.com/reisneto/multiple-service-workers/blob/master/server/pushExternal.js#L19)
