@@ -35,7 +35,7 @@ self.addEventListener('push', function (e) {
   
   const options = {
     body: payload,
-    icon: 'images/yaymeme.jpeg',
+    icon: '/images/icon.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
@@ -44,7 +44,7 @@ self.addEventListener('push', function (e) {
     actions: [
       {
         action: 'more', title: 'Learn more',
-        icon: 'images/checkmark.png'
+        icon: '/images/icon.png'
       },
       {
         action: 'close', title: 'Close',

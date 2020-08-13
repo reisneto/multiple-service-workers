@@ -1,5 +1,9 @@
 {
+  "scripts": {
+	"start": "http-server --inspect ./public"
+  },
   "dependencies": {
+    "http-server": "^0.12.3",
     "web-push": "^3.4.4"
   }
 }

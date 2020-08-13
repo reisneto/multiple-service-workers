@@ -3,7 +3,7 @@ self.addEventListener('push', function (e) {
   
   const options = {
     body: payload,
-    icon: './images/yaymeme.jpeg',
+    icon: '/images/icon.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
